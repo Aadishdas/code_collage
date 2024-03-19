@@ -1,49 +1,47 @@
 <html>
+
 <body>
-<form name="frm1">
-Enter Marks of English
-<input type="number" name="t1"><br><br>
-Enter Marks of Maths
-<input type="number" name="t2"><br><br>
-Enter Marks of Physics
-<input type="number" name="t3"><br><br>
-Enter Marks of Chemistry
-<input type="number" name="t4"><br><br>
-Enter Marks of IT
-<input type="number" name="t5"><br><br>
-<input type="button" name="btnclick" value="Print Grade" onClick="grade()">
-</form>
+    <form name="frm1">
+        Enter Marks of English
+        <input type="number" name="t1"><br><br>
+        Enter Marks of Maths
+        <input type="number" name="t2"><br><br>
+        Enter Marks of Physics
+        <input type="number" name="t3"><br><br>
+        Enter Marks of Chemistry
+        <input type="number" name="t4"><br><br>
+        Enter Marks of IT
+        <input type="number" name="t5"><br><br>
+        <input type="button" name="btnclick" value="Print Grade" onClick="grade()">
+    </form>
 </body>
 <script type="text/javascript">
-function grade()
-{
-var m1,m2,m3,m4,m5,a;
-m1=frm1.t1.value;
-m2=frm1.t2.value;
-m3=frm1.t3.value;
-m4=frm1.t4.value;
-m5=frm1.t5.value;
-a=(m1+m2+m3+m4+m5)/5;
-alert("Average Marks of Student is "+a);
-if(a>90)
-alert("Grade A");
-else
-{
-if(a>=81)
-alert("Grade B");
-else
-{
-if(a>=71)
-alert("Grade C");
-else
-{
-if(a=61)
-alert("Grade D");
-else
-alert("Grade F");
-}
-}
-}
-}
+    function grade() {
+        var m1, m2, m3, m4, m5, a;
+        m1 = frm1.t1.value;
+        m2 = frm1.t2.value;
+        m3 = frm1.t3.value;
+        m4 = frm1.t4.value;
+        m5 = frm1.t5.value;
+        a = (m1 + m2 + m3 + m4 + m5) / 5;
+        alert("Average Marks of Student is " + a);
+        if (a > 90)
+            alert("Grade A");
+        else {
+            if (a >= 81)
+                alert("Grade B");
+            else {
+                if (a >= 71)
+                    alert("Grade C");
+                else {
+                    if (a = 61)
+                        alert("Grade D");
+                    else
+                        alert("Grade F");
+                }
+            }
+        }
+    }
 </script>
+
 </html>

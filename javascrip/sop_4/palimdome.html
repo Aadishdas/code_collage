@@ -1,35 +1,35 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>Palindrome</title>
+    <title>Palindrome</title>
 </head>
+
 <body>
-<form name="frm1">
-Enter your name
-<input type="text" name="t1"><br><br>
-<input type="button" name="btncheck" value="Check Palindrome" onClick="chk()">
-</form>
+    <form name="frm1">
+        Enter your name
+        <input type="text" name="t1"><br><br>
+        <input type="button" name="btncheck" value="Check Palindrome" onClick="chk()">
+    </form>
 </body>
 <script type="text/javascript">
-function chk()
-{
-var a,s,i,ch,n;
-a=frm1.t1.value;
-s=a.toLowerCase();
-n=s.length;
-var p=1;
-for(i=0; i<n/2;i++)
-{
-if(s.charAt(i)!= s.charAt(n-1-i))
-{
-p=0;
-break;
-}
-}
-if(p==1)
-alert("String is Palindrome");
-else
-alert("String is palindrome")
-}
+    function chk() {
+        var a, s, i, ch, n;
+        a = frm1.t1.value;
+        s = a.toLowerCase();
+        n = s.length;
+        var p = 1;
+        for (i = 0; i < n / 2; i++) {
+            if (s.charAt(i) != s.charAt(n - 1 - i)) {
+                p = 0;
+                break;
+            }
+        }
+        if (p == 1)
+            alert("String is Palindrome");
+        else
+            alert("String is palindrome")
+    }
 </script>
+
 </html>
